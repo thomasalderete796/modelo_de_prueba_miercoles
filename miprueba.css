@@ -36,13 +36,13 @@ body{
 }
 .logobienvenida{
     height: 20vh;
-    width: 20vw;
+    width: 10px;
     filter: (var(--sombra-grande));
 }
 
 .logo{
     height: 80px; 
-    width: 100px;
+    width: 110px;
     margin: auto;
     mix-blend-mode: multiply;
     
