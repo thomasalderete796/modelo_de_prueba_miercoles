@@ -28,6 +28,9 @@ body{
     display: flex;
     flex-direction: column;
     height: 40%;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 .logobienvenida{
     height: 20vh;
@@ -35,13 +38,18 @@ body{
     box-shadow: var(--sombra-grande);
 }
 
-
+.logo{
+    height: 80px; 
+    width: 110px;
+    margin: auto;
+    mix-blend-mode: multiply;
+}
 .login{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60%;
+    height: 40%;
 
 
 }
