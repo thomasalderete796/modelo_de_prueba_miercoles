@@ -6,8 +6,9 @@
 }
 
 :root{
-    --bg-colorprimario:rgb(184,0, 245);
-    ---colorsecundario: rgb(98, 2, 129);
+    --bg-primario-gradient: linear-gradient(to top, rgb(184, 0, 245), rgb(255, 255, 255));
+    --bg-colorprimario:linear-gradient(to bottom, rgb(197, 17, 11), white);
+    --bg-colorsecundario: rgb(63, 2, 160);
     --txt-primario :rgb(0, 0, 0);
     --ancho50:50%;
     --arial: Arial, Helvetica, sans-serif;
@@ -35,7 +36,7 @@ body{
 .logobienvenida{
     height: 20vh;
     width: 20vw;
-    box-shadow: var(--sombra-grande);
+    filter: (var(--sombra-grande));
 }
 
 .logo{
@@ -43,13 +44,38 @@ body{
     width: 110px;
     margin: auto;
     mix-blend-mode: multiply;
+    
 }
+
 .login{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 40%;
+    padding: .5em;
+    gap: .5em;
+}
 
+.login input[type="email"],.login input[type="password"]{
+    width: 100%;
+    height: 2.4em;
+    padding: 0.5em;
+    border-radius: .25em;
+    border: none;
+    background-color: var(--bg-secundario);
+}
+
+.login .boton{
+    width: 100%;
+    height: 2.4em;
+    background-color: var(--bg-colorsecundario);
+    color: white;
+    border-radius: .25em;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.4em;
 
 }
