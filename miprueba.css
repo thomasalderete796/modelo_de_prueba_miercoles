@@ -5,9 +5,43 @@
 
 }
 
+:root{
+    --bg-colorprimario:rgb(184,0, 245);
+    ---colorsecundario: rgb(98, 2, 129);
+    --txt-primario :rgb(0, 0, 0);
+    --ancho50:50%;
+    --arial: Arial, Helvetica, sans-serif;
+    --transicion: all 0.3 ease-in-out;
+    --sombra-chica: 0px 0px 5px rgba(0, 0, 0, 5);
+    --sombra-grande: 0px 0px 20px rgba(255, 255, 0, 5)
+}
+
 body{
     height: 100vh;
     
     background-color: blueviolet;
     color: white;
+    font-family: var(--arial);
+}
+
+.bienvenida{
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
+.logobienvenida{
+    height: 20vh;
+    width: 20vw;
+    box-shadow: var(--sombra-grande);
+}
+
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+
+
 }
