@@ -32,6 +32,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 16px;
+    color:black;
 }
 .logobienvenida{
     height: 20vh;
