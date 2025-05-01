@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    text-decoration: none;
+    list-style: none;
 }
 
 :root{
     --bg-primario-gradient: linear-gradient(to top, rgb(184, 0, 245), rgb(255, 255, 255));
     --bg-colorprimario:linear-gradient(to bottom, rgb(197, 17, 11), white);
-    --bg-colorsecundario: rgb(63, 2, 160);
+    --bg-colorsecundario: rgb(50, 138, 62);
     --txt-primario :rgb(0, 0, 0);
     --ancho50:50%;
     --arial: Arial, Helvetica, sans-serif;
@@ -20,9 +21,10 @@
 body{
     height: 100vh;
     
-    background-color: blueviolet;
-    color: white;
+    background-color: rgb(153, 43, 226);
+    color: black;
     font-family: var(--arial);
+    text-align: center;
 }
 
 .bienvenida{
@@ -36,8 +38,8 @@ body{
 }
 .logobienvenida{
     height: 20vh;
-    width: 10px;
-    filter: (var(--sombra-grande));
+    width: 80vw;
+    filter: drop-shadow(var(--sombra-grande));
 }
 
 .logo{
@@ -64,7 +66,7 @@ body{
     padding: 0.5em;
     border-radius: .25em;
     border: none;
-    background-color: var(--bg-secundario);
+    background-color: var(--bg-colorsecundario);
 }
 
 .login .boton{
@@ -79,4 +81,8 @@ body{
     text-align: center;
     line-height: 2.4em;
 
+}
+
+*{
+    outline: dashed lpx red;
 }
